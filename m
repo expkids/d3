@@ -1,9 +1,19 @@
 {
     "spider": "https://files.zohopublic.com.cn/public/workdrive-public/download/gd5ic01b6d4922692401eac6018178d033d06",
-"lives": [
-{"name": "me_2024","type":0,"url":"https://ghproxy.net/https://raw.githubusercontent.com/BryanHK/disc/main/live.txt","playerType":1,"ua":"okhttp/3.15","epg":"http://epg.112114.xyz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"}],
-
-"warningText": "請不要相信視頻中的广告.多謝大家.",
+    "lives": [
+        {
+            "name": "tvlive",
+            "type": 0,
+            "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/dxawi/0/main/tvlive.txt",
+            "playerType": 2
+        },
+        {
+            "name": "TV",
+            "type": 0,
+            "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/wwb521/live/main/tv.m3u",
+            "playerType": 1
+        }
+    ],
     "sites": [
         {
             "key": "豆瓣",
@@ -80,7 +90,7 @@
         },
         {
             "key": "玩偶",
-            "name": "玩偶哥哥（阿里限速啦）",
+            "name": "玩偶哥哥(网盘)",
             "type": 3,
             "api": "csp_WoGG",
             "searchable": 1,
@@ -91,6 +101,32 @@
                 "from": "4k|auto",
                 "siteUrl": "https://www.wogg.net/",
                 "danMu": "弹"
+            }
+        },
+        {
+            "key": "米搜",
+            "name": "小米(网盘搜索)",
+            "type": 3,
+            "api": "csp_MIPanSo",
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "ext": {
+                "Cloud-drive": "tvfan/Cloud-drive.txt",
+                "from": "4k|auto"
+            }
+        },
+        {
+            "key": "抠搜",
+            "name": "抠抠(网盘搜索)",
+            "type": 3,
+            "api": "csp_KkSs",
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "ext": {
+                "Cloud-drive": "tvfan/Cloud-drive.txt",
+                "from": "4k|auto"
             }
         },
         {
@@ -105,6 +141,25 @@
                 "Cloud-drive": "tvfan/Cloud-drive.txt",
                 "from": "4k|auto"
             }
+        },
+        {
+            "key": "小点",
+            "name": "小点",
+            "type": 3,
+            "api": "csp_Appxd",
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "ext": "FbjEd1ddiJ6bwA0Z8ijG89k6OstPBosSHy5L8uXWgRZGSNrCqC7DmxucvvflR3fsMy/Wnih3xSpmA3pwCNspfAcIH4fYhmOEdGxX3jEdjqUpC+m0fSxkNAbkIy0diJWirn+WOtBkBcYhsgA8u1igBBUadbO0s0MCPsYcbHFRNw=="
+        },
+        {
+            "key": "煤球",
+            "name": "煤球",
+            "type": 3,
+            "api": "csp_Appmq",
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 1
         },
         {
             "key": "短剧",
@@ -337,8 +392,22 @@
             "filterable": 1
         },
         {
+            "key": "夸搜",
+            "name": "夸搜(网盘搜索)",
+            "type": 3,
+            "api": "csp_PanSearch",
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "ext": {
+                "pan": "quark",
+                "Cloud-drive": "tvfan/Cloud-drive.txt",
+                "from": "4k|auto"
+            }
+        },
+        {
             "key": "YiSo",
-            "name": "易搜（阿里限速啦不好用了）",
+            "name": "易搜(网盘搜索)",
             "type": 3,
             "api": "csp_YiSo",
             "searchable": 1,
@@ -351,7 +420,7 @@
         },
         {
             "key": "PanSou",
-            "name": "盘搜（阿里限速啦不好用了）",
+            "name": "盘搜(网盘搜索)",
             "type": 3,
             "api": "csp_PanSou",
             "searchable": 1,
@@ -363,21 +432,8 @@
             }
         },
         {
-            "key": "UpYun",
-            "name": "Up搜（阿里限速啦不好用了）",
-            "type": 3,
-            "api": "csp_UpYun",
-            "searchable": 1,
-            "quickSearch": 1,
-            "changeable": 0,
-            "ext": {
-                "Cloud-drive": "tvfan/Cloud-drive.txt",
-                "from": "4k|auto"
-            }
-        },
-        {
             "key": "PanSearch",
-            "name": "盘Se（阿里限速啦不好用了）",
+            "name": "盘Se(网盘搜索)",
             "type": 3,
             "api": "csp_PanSearch",
             "searchable": 1,
@@ -493,50 +549,6 @@
             "quickSearch": 0,
             "filterable": 1,
             "ext": "https://xhdwc.tk/json/xx5.json"
-        }
-    ],
-    "doh": [
-        {
-            "name": "Google",
-            "url": "https://dns.google/dns-query",
-            "ips": [
-                "8.8.4.4",
-                "8.8.8.8"
-            ]
-        },
-        {
-            "name": "Cloudflare",
-            "url": "https://cloudflare-dns.com/dns-query",
-            "ips": [
-                "1.1.1.1",
-                "1.0.0.1",
-                "2606:4700:4700::1111",
-                "2606:4700:4700::1001"
-            ]
-        },
-        {
-            "name": "AdGuard",
-            "url": "https://dns.adguard.com/dns-query",
-            "ips": [
-                "94.140.14.140",
-                "94.140.14.141"
-            ]
-        },
-        {
-            "name": "DNSWatch",
-            "url": "https://resolver2.dns.watch/dns-query",
-            "ips": [
-                "84.200.69.80",
-                "84.200.70.40"
-            ]
-        },
-        {
-            "name": "Quad9",
-            "url": "https://dns.quad9.net/dns-quer",
-            "ips": [
-                "9.9.9.9",
-                "149.112.112.112"
-            ]
         }
     ]
 }
