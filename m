@@ -4,7 +4,7 @@
         {
             "name": "tvlive",
             "type": 0,
-            "url": "https://mirror.ghproxy.com/raw.githubusercontent.com/expkids/main/live.txt",
+            "url": "https://mirror.ghproxy.com/raw.githubusercontent.com/expkids/disc/main/live.txt",
             "playerType": 2
         },
         {
